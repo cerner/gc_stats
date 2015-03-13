@@ -1,5 +1,15 @@
 # gc_stats
 
+[![Build Status](https://api.travis-ci.org/cerner/gc_stats.svg)][travis]
+[![Gem Version](http://img.shields.io/gem/v/gc_stats.svg)][gem]
+[![Code Climate](http://img.shields.io/codeclimate/github/cerner/gc_stats.svg)][codeclimate]
+[![Dependencies Status](http://img.shields.io/gemnasium/cerner/gc_stats.svg)][gemnasium]
+
+[travis]: https://travis-ci.org/cerner/gc_stats
+[gem]: https://rubygems.org/gems/gc_stats
+[codeclimate]: https://codeclimate.com/github/cerner/gc_stats
+[gemnasium]: https://gemnasium.com/cerner/gc_stats
+
 gc_stats is a Ruby gem for Rails applications that collects and logs garbage collection statistics during each request. GC statistics are only logged if a GC event is detected. This allows you to track and analyze the GC characteristics of your Rails application.
 
 ## Installation
