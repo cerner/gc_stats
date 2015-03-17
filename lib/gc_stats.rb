@@ -1,8 +1,4 @@
-require 'gc_stats/initializer'
+# setup GCStats module
 require 'gc_stats/version'
-require 'gc_stats/middleware'
-require 'gc_stats/gc_logger'
-
-module GCStats
-
-end
+# setup GCStatus via Rails initializer
+require 'gc_stats/initializer'

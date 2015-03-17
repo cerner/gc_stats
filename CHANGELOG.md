@@ -1,3 +1,8 @@
+1.0.1
+-----
+* [Rename the the log message field name from 'Process.pid' to 'PID'](https://github.com/cerner/gc_stats/pull/1)
+* [Cleanup of formatting, require statements and keeping lines to 80 characters](https://github.com/cerner/gc_stats/pull/2)
+
 1.0.0
 -----
 * Initial release
