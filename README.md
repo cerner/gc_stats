@@ -30,17 +30,17 @@ Once you have added a dependency to this gem and installed it, simply require th
 
 ## Usage
 
-With gc_stats, all of your final controller log messages will now contain the Process pid. For example:
+With gc_stats, all of your final controller log messages will now contain the PID of the Ruby process. For example:
 
-    Completed 200 OK in 5ms (Process.pid: 12875)
+    Completed 200 OK in 5ms (PID: 12875)
 
 If a garbage collection event occurs during a request, you will see additional information in this same final controller log message that will contain the GC statistics. For example:
 
-    Completed 200 OK in 38ms (Process.pid: 12875 | GC: [total_gc_time: 22.574 ms | num_events: 1 | major/minor/count: 9/24/33])
+    Completed 200 OK in 38ms (PID: 12875 | GC: [total_gc_time: 22.574 ms | num_events: 1 | major/minor/count: 9/24/33])
 
 An explanation of each field being logged follows:
 
-* Process.pid - The process id obtained from [Process.pid](http://ruby-doc.org/core-2.1.0/Process.html#method-c-pid)
+* PID - The process id obtained from [Process.pid](http://ruby-doc.org/core-2.1.0/Process.html#method-c-pid)
 * total_gc_time - The total time taken for garbage collection during this request, converted to milliseconds ([GC::Profiler.total_time](http://ruby-doc.org/core-2.1.0/GC/Profiler.html#method-c-total_time))
 * num_events - The number of garbage collection events that occurred during the request
 * major - The total number of GC runs that traversed the whole Ruby heap, including old, young and remembered objects over the life of this process
@@ -67,4 +67,3 @@ Copyright 2015 Cerner Innovation, Inc.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
 http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-
